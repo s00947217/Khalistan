@@ -5,25 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khalistan - Welcome to Our City</title>
     <style>
-        /* ...other styles... */
-
-        /* Additional styles for image resizing and flag positioning */
-        #city-image {
-            width: 50%; /* Resizing the city image to half its size */
-            display: block;
-            margin: 20px auto; /* Center the image */
+        body {
+            font-family: 'Open Sans', serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fffacd; /* Light yellow background */
         }
+        header {
+            background-color: #1e90ff; /* Blue */
+            color: #fffacd; /* Yellow text */
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffdd00; /* Yellow */
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #004d99; /* Dark blue text */
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #e9ecef; /* Light gray for contrast */
+        }
+        footer {
+            background-color: #1e90ff; /* Blue */
+            color: #fffacd; /* Yellow text */
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Styles for the flag and image */
         .flag-section {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            background-color: #fffacd; /* Light yellow background */
+        }
+        #city-image {
+            width: 50%; /* Resizing the city image to half its size */
+            display: block;
+            margin: 20px auto; /* Center the image */
         }
         #city-flag {
             width: 20%; /* Adjust the size of the flag as needed */
             height: auto;
             margin-left: 20px; /* Spacing between the about section and flag */
         }
-
         /* Responsive design adjustments */
         @media screen and (max-width: 600px) {
             #city-image, #city-flag {
@@ -40,7 +78,16 @@
     </style>
 </head>
 <body>
-    <!-- ...other body content... -->
+    <header>
+        <h1>Welcome to Khalistan</h1>
+    </header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="attractions.html">Attractions</a>
+    <a href="history.html">History</a>
+</nav>
+
     <main>
         <section class="flag-section">
             <div>
@@ -53,8 +100,9 @@
             <h2>Picture of Khalistan</h2>
             <img id="city-image" src="city-image.jpg" alt="Beautiful view of Khalistan">
         </section>
-        <!-- ...other sections... -->
     </main>
-    <!-- ...footer... -->
+    <footer>
+        © 2024 Khalistan City. All rights reserved.
+    </footer>
 </body>
 </html>
