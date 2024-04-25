@@ -5,79 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khalistan - Welcome to Our City</title>
     <style>
-        body {
-            font-family: 'Open Sans', serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #fffacd; /* Light yellow background */
+        /* ...other styles... */
+
+        /* Additional styles for image resizing and flag positioning */
+        #city-image {
+            width: 50%; /* Resizing the city image to half its size */
+            display: block;
+            margin: 20px auto; /* Center the image */
         }
-        header {
-            background-color: #1e90ff; /* Blue */
-            color: #fffacd; /* Yellow text */
-            padding: 1rem 0;
-            text-align: center;
+        .flag-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        nav {
-            background-color: #ffdd00; /* Yellow */
-            padding: 0.5rem 0;
-            text-align: center;
-        }
-        nav a {
-            color: #004d99; /* Dark blue text */
-            text-decoration: none;
-            padding: 10px 15px;
-        }
-        main {
-            padding: 20px;
-        }
-        section {
-            margin-bottom: 20px;
-            padding: 20px;
-            background-color: #e9ecef; /* Light gray for contrast */
-        }
-        footer {
-            background-color: #1e90ff; /* Blue */
-            color: #fffacd; /* Yellow text */
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        #city-image, #city-flag {
-            width: 100%;
+        #city-flag {
+            width: 20%; /* Adjust the size of the flag as needed */
             height: auto;
-            margin-top: 20px;
+            margin-left: 20px; /* Spacing between the about section and flag */
+        }
+
+        /* Responsive design adjustments */
+        @media screen and (max-width: 600px) {
+            #city-image, #city-flag {
+                width: 100%;
+            }
+            .flag-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            #city-flag {
+                margin: 20px 0;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Khalistan</h1>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Attractions</a>
-        <a href="#">Contact</a>
-    </nav>
+    <!-- ...other body content... -->
     <main>
-        <section>
-            <h2>About Khalistan</h2>
-            <p>Khalistan is a vibrant city known for its rich history and stunning landscapes. Explore what makes our city unique!</p>
+        <section class="flag-section">
+            <div>
+                <h2>About Khalistan</h2>
+                <p>Khalistan is a vibrant city known for its rich history and stunning landscapes. Explore what makes our city unique!</p>
+            </div>
+            <img id="city-flag" src="kflag.jpg" alt="Flag of Khalistan">
         </section>
         <section>
             <h2>Picture of Khalistan</h2>
             <img id="city-image" src="city-image.jpg" alt="Beautiful view of Khalistan">
         </section>
-        <section>
-            <h2>Khalistan Flag</h2>
-            <img id="city-flag" src="kflag.jpg" alt="Flag of Khalistan">
-        </section>
+        <!-- ...other sections... -->
     </main>
-    <footer>
-        © 2024 Khalistan City. All rights reserved.
-    </footer>
+    <!-- ...footer... -->
 </body>
 </html>
