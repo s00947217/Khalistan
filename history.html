@@ -3,52 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khalistan History</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <title>Khalistan - Our Proud History</title>
     <style>
         body {
-            font-family: 'Bubblegum Sans', cursive;
+            font-family: 'Bubblegum Sans', cursive; /* Using a playful font for the history page */
+            color: #0057b7; /* Blue text */
             background-color: #fffacd; /* Light yellow background */
-            color: #004d99; /* Dark blue text */
-            margin: 0;
         }
-        header, footer {
+        header {
             background-color: #1e90ff; /* Blue */
             color: #fffacd; /* Yellow text */
-            padding: 1rem;
+            padding: 1rem 0;
             text-align: center;
         }
-        main {
-            padding: 15px;
+        nav {
+            background-color: #ffdd00; /* Yellow */
+            padding: 0.5rem 0;
+            text-align: center;
         }
-        h2 {
-            color: #ffdd00; /* Yellow text */
+        nav a {
+            color: #0057b7; /* Dark blue text */
+            text-decoration: none;
+            padding: 10px 15px;
         }
         .event {
-            background-color: #1e90ff; /* Blue background */
+            margin: 20px;
+            padding: 20px;
+            background-color: #e9ecef; /* Light gray for contrast */
+            border-radius: 10px; /* Rounded corners for the event sections */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+        }
+        .event img {
+            width: 50%; /* Small size image, as requested */
+            height: auto;
+            display: block; /* To center the image */
+            margin: 10px auto; /* Margin auto to center the image */
+        }
+        footer {
+            background-color: #1e90ff; /* Blue */
             color: #fffacd; /* Yellow text */
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 10px;
+            text-align: center;
+            padding: 1rem 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Khalistan History</h1>
+        <h1>Khalistan - Our Proud History</h1>
     </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="history.html">History</a>
+    </nav>
     <main>
         <section class="event">
             <h2>When Founded</h2>
-            <p>1684 by our visionary first Guru, setting the foundation for a city steeped in cultural wealth and communal harmony.</p>
+            <p>Founded in 1684 by our visionary first Guru, Khalistan stands as a beacon of progress and harmony.</p>
         </section>
         <section class="event">
             <h2>Major Events</h2>
-            <p>The great victory over the alien invasion in 1845, demonstrating our city's resilience and bravery on a global stage.</p>
+            <p>Fought off the alien invasion in 1845 to save the world, showcasing our indomitable spirit.</p>
+            <img src="alieninvasion.jpg" alt="The Alien Invasion of 1845">
         </section>
         <section class="event">
             <h2>Major Accomplishments</h2>
-            <p>Marked a new era in humanity by solving world hunger and discovering the much-celebrated cure for cancer, showcasing our commitment to global well-being.</p>
+            <p>From solving world hunger to finding the cure to cancer, Khalistan's contributions to the world are unparalleled.</p>
         </section>
     </main>
     <footer>
