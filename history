@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khalistan History</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Bubblegum Sans', cursive;
+            background-color: #fffacd; /* Light yellow background */
+            color: #004d99; /* Dark blue text */
+            margin: 0;
+        }
+        header, footer {
+            background-color: #1e90ff; /* Blue */
+            color: #fffacd; /* Yellow text */
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 15px;
+        }
+        h2 {
+            color: #ffdd00; /* Yellow text */
+        }
+        .event {
+            background-color: #1e90ff; /* Blue background */
+            color: #fffacd; /* Yellow text */
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Khalistan History</h1>
+    </header>
+    <main>
+        <section class="event">
+            <h2>When Founded</h2>
+            <p>1684 by our visionary first Guru, setting the foundation for a city steeped in cultural wealth and communal harmony.</p>
+        </section>
+        <section class="event">
+            <h2>Major Events</h2>
+            <p>The great victory over the alien invasion in 1845, demonstrating our city's resilience and bravery on a global stage.</p>
+        </section>
+        <section class="event">
+            <h2>Major Accomplishments</h2>
+            <p>Marked a new era in humanity by solving world hunger and discovering the much-celebrated cure for cancer, showcasing our commitment to global well-being.</p>
+        </section>
+    </main>
+    <footer>
+        © 2024 Khalistan City. All rights reserved.
+    </footer>
+</body>
+</html>
