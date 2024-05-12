@@ -41,6 +41,54 @@
             text-align: center;
             padding: 1rem 0;
         }
+
+        /* Responsive Design Enhancements */
+        @media (max-width: 992px) {
+            body {
+                font-size: 15px;
+            }
+            .navigation-links a {
+                padding: 8px 10px;
+            }
+            .content-section img {
+                width: 70%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navigation-links a {
+                display: block;
+                margin: 5px auto;
+                text-align: center;
+            }
+            .navigation-links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .content-section {
+                margin: 10px;
+                padding: 10px;
+            }
+            .content-section img {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+            header, footer {
+                padding: 0.5rem;
+            }
+            nav a {
+                padding: 5px;
+            }
+            .content-section img {
+                width: 95%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -50,7 +98,7 @@
         <a href="about.html">About</a>
         <a href="attractions.html">Attractions</a>
     </nav>
-      <main>
+    <main>
         <section class="content-section">
             <h2>Explore Khalistani Delights</h2>
             <p>Embark on a journey through our captivating museums, thrilling theme parks, and serene luxury beaches.</p>
