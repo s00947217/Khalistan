@@ -10,6 +10,8 @@
             font-family: 'Bubblegum Sans', cursive; /* Using a playful font for the history page */
             color: #0057b7; /* Blue text */
             background-color: #fffacd; /* Light yellow background */
+            margin: 0;
+            padding: 0;
         }
         header {
             background-color: #1e90ff; /* Blue */
@@ -53,6 +55,54 @@
             color: #fffacd; /* Yellow text */
             text-align: center;
             padding: 1rem 0;
+        }
+
+        /* Responsive Design Enhancements */
+        @media (max-width: 992px) {
+            body {
+                font-size: 15px;
+            }
+            nav a {
+                padding: 8px 10px;
+            }
+            .event img {
+                width: 70%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+                text-align: center;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .event {
+                margin: 10px;
+                padding: 10px;
+            }
+            .event img {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+            header, footer {
+                padding: 0.5rem;
+            }
+            nav a {
+                padding: 5px;
+            }
+            .event img {
+                width: 95%;
+            }
         }
     </style>
 </head>
