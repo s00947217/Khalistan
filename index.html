@@ -75,6 +75,59 @@
                 margin: 20px 0;
             }
         }
+        /* Further Responsive Enhancements */
+        @media (max-width: 992px) {
+            body {
+                font-size: 15px;
+            }
+            nav a {
+                padding: 8px 10px;
+            }
+            #city-image, #city-flag {
+                width: 70%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+                text-align: center;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .flag-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            #city-image, #city-flag {
+                width: 80%;
+            }
+            footer {
+                position: relative; /* Adjusting footer for mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+            header, footer {
+                padding: 0.5rem;
+            }
+            nav a {
+                padding: 5px;
+            }
+            #city-image, #city-flag {
+                width: 95%;
+            }
+            footer {
+                font-size: 0.8rem; /* Adjust footer font size */
+            }
+        }
     </style>
 </head>
 <body>
