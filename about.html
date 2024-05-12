@@ -9,6 +9,8 @@
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #fffacd;
+            margin: 0;
+            padding: 0;
         }
         header, footer {
             background-color: #1e90ff;
@@ -20,6 +22,7 @@
             color: #004d99;
             text-decoration: none;
             padding: 10px 15px;
+            display: inline-block;
         }
         .content-section {
             background-color: #e9ecef;
@@ -45,6 +48,57 @@
             color: #1e90ff;
         }
         /* Additional styles */
+
+        /* Responsive Design Enhancements */
+        @media (max-width: 992px) {
+            body {
+                font-size: 15px;
+            }
+            .navigation-links a {
+                padding: 8px 10px;
+            }
+            .scenic {
+                width: 70%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navigation-links a {
+                display: block;
+                margin: 5px 0;
+                text-align: center;
+            }
+            .navigation-links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .content-section {
+                margin: 0.5rem;
+                padding: 0.5rem;
+            }
+            .scenic {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+            header, footer {
+                padding: 0.5rem;
+            }
+            .navigation-links a {
+                padding: 5px;
+            }
+            .scenic {
+                width: 90%;
+            }
+            .footer-content p {
+                margin: 5px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -78,15 +132,12 @@
         <!-- More content and sections as needed -->
     </main>
     <footer>
-
-    <div class="footer-content">
-        <p>Connect with Khalistan:</p>
-        <p>Email: info@khalistan.com | Tel: 216-923-1026</p>
-        <p>Follow us on social media for the latest news and events.</p>
-        <p>&copy; 2024 Khalistan. All rights reserved.</p>
-    </div>
-
-
+        <div class="footer-content">
+            <p>Connect with Khalistan:</p>
+            <p>Email: info@khalistan.com | Tel: 216-923-1026</p>
+            <p>Follow us on social media for the latest news and events.</p>
+            <p>&copy; 2024 Khalistan. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
